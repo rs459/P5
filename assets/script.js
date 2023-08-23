@@ -22,7 +22,7 @@
 	];
 
 	let currentSlide = 0;
-	const PATH_TO_SLIDE = "/assets/images/slideshow/";
+	const PATH_TO_SLIDE = "assets/images/slideshow/";
 
 	const elBanner = document.querySelector("#banner");
 	const elImg = elBanner.querySelector(".banner-img");
@@ -46,12 +46,12 @@
 	// insert arrow button
 	const elPrevBtn = document.createElement("button");
 	elPrevBtn.classList.add("arrow", "arrow_left");
-	elPrevBtn.innerHTML = "<img src='/assets/images/arrow_left.png' alt='Aller à la slide précédente'>";
+	elPrevBtn.innerHTML = "<img src='./assets/images/arrow_left.png' alt='Aller à la slide précédente'>";
 	elBanner.prepend(elPrevBtn);
 
 	const elNextBtn = document.createElement("button");
 	elNextBtn.classList.add("arrow", "arrow_right");
-	elNextBtn.innerHTML = "<img src='/assets/images/arrow_right.png' alt='Aller à la slide suivante'>";
+	elNextBtn.innerHTML = "<img src='./assets/images/arrow_right.png' alt='Aller à la slide suivante'>";
 	elBanner.append(elNextBtn);
 
 	// insert dots
